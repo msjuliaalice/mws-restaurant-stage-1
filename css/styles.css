@@ -170,7 +170,7 @@ nav h1 a {
   min-height: 248px;
   min-width: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list li h3 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 1.2em;
@@ -185,10 +185,12 @@ nav h1 a {
   font-size: 1.2em;
 }
 #restaurants-list li a {
-  color: orange;
+  color: white;
+  background-color: #f18200;
   display: inline-block;
   font-size: 1.2em;
-  margin: 15px 0 0;
+  margin: 15px 0 5px 0;
+  padding: 5px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -294,7 +296,8 @@ nav h1 a {
   }
   #restaurants-list li{
     display: inline-block; 
-    width:45%
+    width:45%;
+    margin:5px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -338,7 +341,8 @@ nav h1 a {
     height: 20px;
   }
   #restaurants-list li{
-    width:90%;
+    width: calc(100% - 20px);
+    margin: 10px;
   }
   .filter-options select {
     margin: 5px;

@@ -1,5 +1,6 @@
 self.addEventListener('install', function(event){
  console.log(event);
+ //TODO: SUGGESTION - It's better to precache all your important files here. Issue #19
 })
 
 self.addEventListener('fetch', function(event){
