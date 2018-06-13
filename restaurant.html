@@ -2,21 +2,23 @@
 <html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Restaurant details and reviews"/>
+
   <!-- Normalize.css for better cross-browser consistency -->
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <!-- Main CSS file -->
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <title>Restaurant Info</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Restaurant details and reviews"/>
 </head>
 
 <body class="inside">
   <!-- Beginning header -->
-  <header>
+  <header role="banner">
       <a href="#restaurant-container" class="skip-link">Skip to Main Content</a>
     <!-- Beginning nav -->
-    <nav>
+    <nav role="navigation">
       <h1><a href="/">Restaurant Reviews</a></h1>
       
     </nav>
@@ -30,10 +32,11 @@
   <!-- End header -->
 
   <!-- Beginning main -->
-  <main>
+  <main role="main">
     <!-- Beginning map -->
-    <section id="map-container">
-      <div id="map" role="application" aria-label="Map of restaurants"></div>
+    <section id="map-container" >
+      <div id="map" role="application" aria-label="Map of restaurants">
+      </div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
@@ -54,8 +57,8 @@
   <!-- End main -->
 
   <!-- Beginning footer -->
-  <footer>
-    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+  <footer role="contentinfo">
+    Copyright (c) 2018 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
   <!-- End footer -->
 
